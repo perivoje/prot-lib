@@ -1,4 +1,5 @@
 import { ElementFinder, browser, protractor } from 'protractor';
+
 const ec = protractor.ExpectedConditions;
 
 export class Utilities {
@@ -13,18 +14,6 @@ export class Utilities {
         browser.wait(ec.elementToBeClickable(selector), 5000);
         selector.click();
     }
-}
-
-export function ClickOnElement(selector: ElementFinder) {
-    browser.wait(ec.elementToBeClickable(selector), 5000);
-    selector.click();
-}
-
-export function enterTextInElement(selector: ElementFinder, text: any) {
-    browser.wait(ec.visibilityOf(selector));
-    selector.clear().then(() => {
-        selector.sendKeys(text);
-    });
 }
 
 export const Greeter = (name: string) => `Hello ${name}`;
