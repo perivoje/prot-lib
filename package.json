@@ -1,0 +1,45 @@
+{
+  "name": "prot-lib",
+  "version": "1.0.0",
+  "description": "Methods with expected conditions to interact with web element",
+  "main": "lib/utilites.js",
+  "types": "lib/utilites.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"lib/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perivoje/prot-lib.git"
+  },
+  "keywords": ["Click", "Utilities", "Expected Conditions", "Protractor"],
+  "author": "perivoje",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perivoje/prot-lib/issues"
+  },
+  "homepage": "https://github.com/perivoje/prot-lib#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.4",
+    "protractor": "^7.0.0"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
