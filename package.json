@@ -1,6 +1,6 @@
 {
   "name": "prot-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Methods with expected conditions to interact with web element",
   "main": "lib/utilites.js",
   "types": "lib/utilites.d.ts",
