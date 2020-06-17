@@ -1,9 +1,11 @@
-import { Greeter } from '../utilities';
+import { Utilities } from '../utilities';
+
+const utilities = new Utilities();
 
 test('My Greeter "Carl"', () => {
-    expect(Greeter('Carl')).toBe('Hello Carl');
+    expect(utilities.greeter('Carl')).toBe('Hello Carl!!!');
 });
 
 test('My Greeter "John"', () => {
-    expect(Greeter('John')).toBe('Hello John');
+    expect(utilities.greeter('John')).toBe('Hello John!!!');
 });
