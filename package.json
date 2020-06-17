@@ -4,6 +4,7 @@
   "description": "Methods with expected conditions to interact with web element",
   "main": "lib/utilites.js",
   "types": "lib/utilites.d.ts",
+  "prepublish": "tsc",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
