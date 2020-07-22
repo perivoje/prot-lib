@@ -1,9 +1,9 @@
 {
   "name": "prot-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Methods with expected conditions to interact with web element",
-  "main": "lib/utilites.js",
-  "types": "lib/utilites.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
@@ -33,6 +33,7 @@
   "homepage": "https://github.com/perivoje/prot-lib#readme",
   "devDependencies": {
     "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.24",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "protractor": "^7.0.0",
@@ -42,10 +43,9 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/node": "^14.0.4",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ]
 }
