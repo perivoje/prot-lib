@@ -1,6 +1,6 @@
 {
   "name": "prot-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Methods with expected conditions to interact with web element",
   "main": "lib/utilites.js",
   "types": "lib/utilites.d.ts",
@@ -35,14 +35,14 @@
     "@types/jest": "^25.2.3",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
+    "protractor": "^7.0.0",
     "ts-jest": "^26.0.0",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/node": "^14.0.4",
-    "protractor": "^7.0.0"
+    "@types/node": "^14.0.4"
   },
   "files": [
     "lib/**/*"
