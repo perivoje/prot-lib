@@ -1,6 +1,6 @@
 {
   "name": "prot-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Methods with expected conditions to interact with web element",
   "main": "lib/utilites.js",
   "types": "lib/utilites.d.ts",
@@ -42,7 +42,8 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/node": "^14.0.4"
+    "@types/node": "^14.0.4",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "files": [
     "lib/**/*"
